@@ -1,0 +1,55 @@
+HTML CSSResult Skip Results Iframe
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="ejecutadprEncriptador.js"></script>
+  <title>ENCRIPTADOR</title>
+</head>
+<body>
+  <section class="container grid-areas">
+    <header class="item header">
+      <div>
+        <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_VaIr7uotp39eIDMM8E0IbctMWmMQXwqxQ7BOqlACSpdYLAxk9prp2jiYmDQirMYE5mg&usqp=CAU"/>
+      </div>
+      <div class="titulo">ENCRIPTADOR DE TEXTO</div>
+    </header>
+    <article class="item content">
+      <textarea id="textoEncriptado" placeholder="Ingrese su texto aqui" " cols="25" rows="5"></textarea>
+      <!-- <input id="textoEncriptado" class="textoarea" type="text" placeholder="Ingrese su texto aqui"> -->
+      <div class="content-logo">
+        <img  class="logo-content" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8SEhUREA0SEBIQFhgVFhITFhMPFhUWFhMXFhUSGBUYKCggGBomGxUYITIjMSorLi4wGB8zOzMtNygtLisBCgoKDg0OGxAQGy4lICUuLSsvLy0vLS0vKy8tLS4tLS0vLS0tLS0vLSstLS0vLS0tLS0tLS8tLS0tLS0tLS0tLf/AABEIANcA6wMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABQECBAYHAwj/xABGEAABAwICBQcGCgsAAwEAAAABAAIDBBESIQUGMUFRExQiYXGRkgcVMlSBoRYXQlJTVZPD0dIjNURicoKisbTB4eLw8UP/xAAbAQEAAgMBAQAAAAAAAAAAAAAABAUBAgYDB//EADMRAAIBAgMFBQgCAwEAAAAAAAABAgMRBBJREyExkdEFQVJhsSIyM3FygaHwksEV4fEU/9oADAMBAAIRAxEAPwD0xHiUxHiVai7Kx82uy7EeJTEeJVqJYXZdiPEpiPEq1EsLsuxHiUxHiVaiWF2XYjxKYjxKtRLC7LsR4lMR4lWolhdl2I8SmI8SrUSwuy7EeJTEeJVqJYXZdiPEpiPEq1EsLsuxHiUxHiVaiWF2XYjxKYjxKtRLC7LsR4lMR4lWolhdl2I8SmI8SrUSwuy7EeJTEeJVqJYXZdiPEpiPEq1EsLsIiIAiIgCIiAIiLNmYugiIlmLoIiJZi6CIiWYugiIlmLoIiJZi6CIiWYugiIlmLoIiJYXQREWDIREQBERAEREAREQBUJVVR+woYZqeq+hdIaSMroqzAY8JdjllYOnisGhoOXRPuU78WmlfX4/tqn8qyvId+1dkH3q6ouVptuN23zPoNVRjJxSVvkjkPxa6V9fj+2qfyp8WulfX4/tqn8q68i336vmzT7LkuhyH4tdK+vx/bVP5U+LXSvr8f21T+VdeRN+r5sfZcl0OQ/FrpX1+P7ap/KqjybaV9fj+2qPyrrqLG/V82L+S5I5J8W2lvX4/tqj8qfFtpb1+P7ao/Kutom/V82L+S5I5J8W2lvX4/tqj8qfFtpb1+P7ao/Kutom/V82L+S5I5J8W2lvX4/tqj8qfFtpb1+P7ao/Kutom/V82L+S5I5J8W2lvX4/tqj8qfFtpb1+P7ao/Kutom/V82L+S5I5J8W2lvX4/tqj8qhIIKmkr+ay1BeR0X2fI9pvFygti35jcu7LjGtP68d/Ez/FC2ptqpDe/eXeeVdRlQqXS92XctCZREXTnDhERYAREQBFVEMFEVUQFFR+wqqo/YUDPLyHftXZB96uqLlfkO/auyD71dUXKUvcR9CrfEYREW55BERAEREAREQBRumNLspwARje7MNGWXEncF66Xr+QjMmHEbgAbBc8erIrRdIVr5nmR9rkAWbcAAcL3UvC4baPNL3fUre0MdsI5Ie8/wtdDYKbWy7rSQgNPygSSOux2qldrUQ4iFjS0fKdc36wBawWrIrD/AMdK97dCl/yeJy5c333X/fsbtoTTwmdyb2hjzstsdbaM9hU2tBoNHTOYZontBjubB1nZbSANm9ZWgdLzCZrHyOe2Q2IJLrX2EE7M1DrYWLbdN8OK8/3Us8N2hOKhDEJ3lweq/wC+Rui4xrT+vHfxM/xQuzrjGtX68d2s/wAUKFD4kPqj6ltW+DU+iXoTKIFVdOcKURVRYBRFVEAREQBERAUVH7Cqqj9hWQzy8h37V2Qferqi5X5Dv2rsg+9XVFydL3EfQq3xGERFueQRetPTl5sMrbSV6tpWkBwmZZxsDxPAcTkVq5JGyi3wRioskUzPp2bjtGwmwPfknNmfTsyvvG42PvTOjOzloYyLJNK36dmVxtHyRdw9g2r0bo4kXEgIO8ZpnQ2ctCK0hRsmYY33sd42gjYQoD4Ij1k+D/q3XzYfnjuTzYfnjuXrTxUqatFkatgKdZ3nC7+fRo0r4Ij1k+D/AKo/WDVzkqd8gqiCMLQcIFscjWXvfaMV/Yt/qaRzBe4IXOfLG1xpYSL4ROMXDOKS11vLGVXF+16HnDszDKa9j8vqXaR1fp6Smkmjkhc6mY+RuFjGSOIYSWGUHFZ1rEZg8Ctg0Vq6yJ4kMhkIzaLYQCRt2m64pU0FO2kgmbj5eWSVrwQ3AGx4CC22d7SM/q4C/atRWkaPpb/RC38JJLfZhsvOOInZxW5PRJeiR6zwNFNSaba4Xbfn3tk6uMa1frx3az/FC7OuMa0/rx38TP8AFCQ+JD6o+ptW+DU+iXoTIVVQKq6c4UIiLACIiAIqIsgqioiAKj9hVVR+wrAZ5eQ79q7IPvV1Rcr8h37V2Qferqi5Sl7iPoVb4jCIi3PI9qWowE5XB2hedLDSxxRwspxycJxMa4l+E3Jvd1ze5PerUWrimbqckrIuENKMhSMsABsGxrsTR7HZqroaU3BpGZgg5DY52Jw9pFyrEWNnEztJHoY6U3JpWZlxOQ2vFnH2gWWVFXNaA1sdmtFgAcgBsCwUTZxG0kSHnIfMPennIfMPeo9FnIhtJGVVVmMWDbDvUZpKgiqI3QzRh8bxYtPbcEEZgggEHdZZKLKSW40bbd2aPS+TCgbJjdJPK0G/JPcwNPUS1ocR7Vu7WgAAAADIAZAAbAFVEUUuAcm+IXGNaf147+Jn+KF2dcY1q/Xju1n+KFvD4kPqj6nnW+DU+iXoTIVVRF05wpVFREBVFREBGc+fxHcnPn8R3LGRRrsvdhT8K5GTz5/Edyc+fxHcsZEuxsKfhXIyefP4juVHVr7HMdyx0dsS7Gwp+FEv5Dv2rsg+9XU1xzyR6apabnPOamOHlBFhxnDiw8pe3Zcd66J8NNF/WMHiXN0msqOlqp52T6KA+Gmi/rGDxJ8NNF/WMHiW90eeVk+igPhpov6xg8SfDTRf1jB4kuhlZPooD4aaL+sYPEnw00X9YweJLoZWT6KA+Gmi/rGDxJ8NNF/WMHiS6GVk+igPhpov6xg8SfDTRf1jB4kuhlZPooEa56L+sYPEq/DLRf1jB4kutRlZOooH4Z6L+sYPEnwz0X9YweJLrUZWTy4pri8jTMhG0Fn+M1dN+GWi/rGDxLlOs9bFNpV8sMjZI3FtntNwbU4Bse0ELMX7cLeJeolH2J38L9CU58/iO5U58/iO5YyLoLs57YU/CuRk8+fxHcnPn8R3LGRLsbCn4VyMnnz+I7k58/iO5YyJdjYU/CuQREWD1CIiAK6KMuc1jRdz3BrRxc4gAd5Vq2DUOj5WtYbdGBplPC/osHe6/wDKtKk1CDloelKG0mo6mdN5MdFQRmSpqJ7NBc5wc2JgAF3ENwmze0lQnmfVX1+X7T/xWz+VTSoipyzlnROkLYw5rcZz6b8riwLW2v1rlVBimeI462YucHEDk3OvhY55ADXEk2abddlzTZ0iNyOgdV8Ak59LgLi0O5UZuABI9HcHDvCytG6n6v1OLm09RMWWvhkFhfZc4eo9yjKfVevniijE8kAjxlzpQ0YnPfe+FjycmhoztsPFb/obRjKaJsTCXW9J7s3PdvcT/rdsUStiYxVou7JVHDSk7yVka98W+jMrsmAAzwym56+kDn3BYGktVdXKd2CepqInEXAe+1xxHRzC3KrqsJwi9xmbe4LD0hSxVsJZjwk3wSs2scDn7xYt6rdkWji5Rdp70Sq2DTjeG5mpz6A1XY7C+tla6wNuVGxzQ5p9HeCD7UfoHVcNa410oa+5aeVGeE4T8niCFr2nC91XVA1UsJhL3GNzLYWtsGtFncC224ggrEdpATc3hZWTNc0CK5YAC+SZxDsnXtZ7R/KrQqzaxoLVbCX8+lwtIaTyoyLg4tHo7wx3hKrDoDVd+LDWzHA0vd+lGTW7XejsF1p7tJBsb4eezEmVrsQYLWY2RpF8V8y5p/lXvHWc3LsdbK7l6bo4WXty0YLCbuGy4JQG0Q6C1We5rG10pc8hrRyozJNgPR4lUfoTVYEg10oLSQRygyIyI9FanSVGAR1PPpSxswbhwG92BkhFi61iHDfxXrSh9XNI2CrmLnF0jWFhuQ6RrQ0Wda45QdVgSgNxpNVNXZJBFFU1EkhaH4GyBxwuaHB+TchZzTfrCz/i50YDkyZw/elPf0QFMaPphSxNa94fKGMbJKejiLWhgOewZbOJPFZNLVgusb57PwVZWxjbtDcizo4RKN5q70NWr9SdB07BJUS1ETbhuIyC1zsHo9SwYdB6rvJDa6UlrXOP6Ueixpc4+juAJ9i3nSdCyeJ0TyQHi2Jps5p3OB4grQafVSvpp43mpfPGHAOwAZsOTrtc4fJJ2X9qkUMSpRtN2fqRq2GkneCui+PQ2qxIAr5buIA/SgZnIfJUppXyc0kMTqqlllJiaXYJC14LR6drAEOtfjsXOKwvhkdFJWTtfGS03jLSbGwcAXbDtB613LU7SDKmla7FjEjBe4tc2wSAjO3SBy61OpzySUl3byHUhmi4s5Ui9aylMMkkJ2wvczPeAei72tsfavJdKmnvRzTTTswiIsmAiIgCIiAIiIAug+S+jwwSVLts77A/uRXaP6i/uXOKtxthaLufkBx6v9e1dqoqAwUrIGC5jjaw23m3Td7Tc+1QO0Klqajq/T/diw7Pp3m5af2cp8p2lsVQ2JtRyeBpc5uEu6TzcXPU0DvXp5NYXOdLMZeUDQGDItsT0nbeoN715ac1S0zPUSyimiLXPOG7YHHAMmXLm3vhA2rbdUNEvp4Gxyhoku50mBrGDETkOgADYBov1Lm8bO1O2u46PBRvVu+7eTsLbDtV6KqqyybuQVVNeVw67D2Cx/ssrQ9EGl8oc68tujc4QW3u4N2Aned+ELHotFyYiZbNAe61jiLhiOE9VxYqaa3KzWk2GQA/ssRUk35npVcLKxy7XqpmfXVOGp5ARRMcW2f0o7RNvcCzrukbl1dS1+StMkkTYawsJEMYOAx/pA1rHP6N7Xfc325ra9O6v6cqJ5JW0zI2SAMDDyLzybSC1rnOaScxitsv2KMj1H000hzaeJrmkEEMpwQQbgg4dt1ewTUVfiUE2nJ2IaprS1nJGrJlZLJifgJuLMaBi2mzmvP8y9edvjBM1aZOXp7xdB0mD9KA03cOjYRyNyv6Sk36jaaJJNNESTcksprknMn0VdJqTpt2EOgicGDC27Kc4W3Jwjo5C5J9pWxqQ1BVvAErq0uhhmixxlr3YsWI+gRhN2xuF+xS2pWkHecoiypLmvfJ+jLXMuwsebG2QsM+F2hXt1J02GlggiDXEEtwU9iW3wkjDuue8rK0JqrpqmnZMKSJ2A5tAgjxNIIc3E1txkf/ALsWsruLSNo2Uk2b9pmjEmGQl14nF2EEhrr5dJu+xsRwWDDNaRvaL+1T1jYYmFtxm120X3HcoXSGiZDfkiOl84kW/wCKimpN2L+lKFn5k0rZW3CvVFk807HPPKXC5ohmbKYxcxuIBdckYmXt/C/vUp5JdLYmvidPyro38C2zJB0Rnt6bXd6k9atGOnp5ImBpe4Yo8Qa4Y2m4FnAjPZe29a9qVq3pWmqMU0DGxPaQ7A2JpuM2HoNBOYtwzVngpXp20K7HRtUzLvMryj0XJ1bZQLNqWZ/xx2af6SzuWsLpXlIoTJRcqB06dzZPYei8dlnX/lXNGOuARvXU4Kpmory3HL46GWq3rv8A37lURFLIYREQBERAERec8mFpPd2oCU1No+cV8QIu2E8o7sjzH9eELs65n5K3QxieaR9nOLYwLEkNAxOOXEkeFb753p/pP6XfgqPHVM1W2m7+/wCy9wcMtJee8yaqXA0u4DLt3KFibYdZ2rLqqlsgGE3btvYjPZvWOuexc81S2n6y/wAJDLTvr+oqioiikkKUo4MIudp93Uo6mq4Gk435jdZxt15BZfnen+k/pd+CscJQt7cvsV2Kr39iP36GRMLlrdxuSOIA2d5Cc2j+jb4QsKTSkNw5souARm1+w2PDqTzvH9IzwyfgpxCM3m0f0bfCE5tH9G3whYXneP6Rnhk/BPO8f0jPDJ+CAzebR/Rt7gFWnJLRc3IyPaDY/wBlg+d4/pG+GT8FdFpSADOW5JJPReNpvwQGVVw4hltGz8FFrN870/0n9LvwWLVVkDs2v6R3WcL+5QsVQze3Hj3k3C18vsPgWIqIq0sS2VlwpeilxMB37D2hRSyKSoay+I2acyczY8bBScJPJU+e7oR8VDNT+W/qZ1XTNljfE8XbI1zHdjgQf7rhUUbo3Phf6UTi09rSQfeF23zvT/Sf0u/Bco145Nte58brtma15yIsSMLhn1txe1dP2dUtNw1V+X+jmsfTvBS0I5ERW5ThERAEREAWHXuzA9qzFh6VmYxl3Zu2NHE/gtZSUVd8Demm5JIxGaUdC7oSPYXbS0kZbrrtOidBwSUkQ5y6cus/nMch6ZO0Bw+Rut/Y5r55c4k3OZKntUtaqqhfeF2ONxu+B5OB37w+Y794e0HYqSviJVXu3evPiXtGhGmrcfTlwO7SwFmRGW4jYvJU1b1lpa+MmJ3SaOnC+weztG9v7wy9uSyqqlwguGbRmd5H4qhrYRx3x3r8l1RxSluluZjLU9bNaxEDDA4Ol2OeMxH1Di/+3uUdp/WOSe7IXOii2XGTnjrPyR1d/BawKJvE+5XGA7GaaqYj+PXpz0KjG9sxacKH8unXlqV881XrL/EU881XrL/EVTmTeLvcnMm8T7l0GzhouSKTbS8T5vqV881XrL/EU881XrL/ABFU5k3i73JzJvF3uTZw0XJDbS8T5vqV881XrL/EU881XrL/ABFU5k3i73JzJvF3uTZw0XJDbS8T5vqV881XrL/EU881XrL/ABFU5k3i73JzJvF3uTZw0XJDbS8T5vqV881XrL/EU88VXrL/ABFU5k3i73JzJvF3uTZw0XJDbS8T5vqbnqnrYH2gqX2fsZKcg/g1x3O69/bt3Fcb5k3ifctj0BrBJT2Y9zpYRucblg/dPDqPssqHH9jZm6mH/j06ctC6wXbKilCv/Lr156nQV6RQl2QHadyvooMYD79FwBG4kEXHYvPWDT9LQx45n2vfBE3N8hG5rf8AZyHFUlHCylvnu9S4rYpR3Q3s8K3QUDKeYGodFcF/OHvP6K2YNybNYOG8bTvXEHVoke68he656RJOK2VwTmR/pe+uOt9VXvtIeTgabsgaeiLbHPPy3dewbgN+uAkZg2IV/h68qXn68+JS1qEai0/dOBuFO67Qf/cl6LE0XWCRm4ObkR/sdSy1dxkpLNHgUM4OMmnxCIi2NQiIgLZZA0FzjYDMlarXVZldiOQ2AcB+Ky9NV+M4GnoNOZ+cfwCi1UYzEZ3kjwX5Zc4PD5Fnlxf4QXvE2w7V5xNv7FkqETT0o6qSJ7ZYpHRyMN2vabEf86thXXNUPKRFMBFWlsEo2S+jFJlv+Y7q2HdtsuPq+nhL3Bo3n3bz3LOW+4OSirs3bT9eyed8scYjY45ADCTb5bh847So9UaLC3BVXQxiopJdxzUpOTbfeERFsYCIiAIiIAiIgCIiALN0PWNhmZK+IStY65YRfLiL5YhtHWAsJFhpNWZlNp3RvWtnlHggbgpC2omcL4szHHcZYvnO/d3byNh5HpCulnkMs8jpZHbXO29QG4AcBkFbVQYHFvDZ2bl5LncmVuJ0ilmV0eUrbjsXgsxY0rbHtWDJdS1Do3Bzdo3cRvC2ynna9oc3YfdxBWnKQ0TXcm6xPQdt6j85TMJiNnLK+D/DIeMw+0jmjxX5RsyoqqiuClCi9N1+Ecm09J208B+JWXpCrETMW0nJo4n8Fq0jy4lxNyTclQcZiMiyR4v8In4LD53nlwX5ZYgCL2hbvVSW5e0WV6IsgKW0LBkXnf0R2bz/AO8FFxRlxDRtJstliYGgNGwCym4GlmnnfBepBx9XLDIuL9P+lyIitinCIiAIiIAiIgCIiAIiIAiIgI/TMF2h42t29h/6oZbQ5oIIOYOS1qohLHFp3e8biqvHU7SU13+pbYCreLg+7h8v31LFY9twr0UAsDDReszd68lgE5oOu/8Aycdnonq+YplaWCRmDYjepyHTjcIxMOLfays8Jio5ck3w4fIq8XhJZs1NceK8yLr6oyvLjs2NHAfisZEVbKTk7viyzjFRSS4IujbcrJRERkqiIgJLQkGZed3RHbvKl0RXeFilSRRYuTdaV+7cERFIIwREQBERAEREAREQBERAEREAUZpqDIPG7onsOz3/AN1VF4YlJ0pX0PfDScasWtSIREVGX5Qi6xSLIiMFERFgH//Z">
+      </div>
+      <p><i class="fa-solid fa-exclamation"></i>Solo letras minúsculas y sin acentos</p>
+      <div class="box-botones separacion">
+        <button class="style-button color-button1" type="button" onclick="encriptar()">
+          Encriptar
+        </button>
+        <button class="style-button color-button2" type="button" onclick="desencriptar()">
+          Desencriptar
+        </button>
+      </div>
+    </article>
+    <aside class="item sidebar">
+      <div id="order1">
+        <img class="imagen" src="foto.jpg">
+        <h2> Ningun texto ingreso hasta el momento</h2>
+        <h3>Ingrese un texto que desee encriptar o desencriptar</h3>
+      </div>
+      <div id="order2">
+        <textarea id="textoDesencriptado" cols="35" rows="15"></textarea>
+        <button class="style-button color-button1" type="button" onclick="copiarMensaje()">
+          Copiar
+        </button>
+      </div>
+    </aside>
+    <footer class="item footer">
+      <div>Challenge Encriptador de Texto - Alura</div>
+      </header>
+    </footer>
+  </section>
+</body>
+</html>
